@@ -17,8 +17,12 @@ body{
 }
 .box{
     width: 100%;
-    height: 36px;
+    height: 34px;
     background-color:bisque;
+    text-align: center;
+    font-family: 'NanumDongHwaDdoBag';
+    padding-top: 10px;
+    font-weight: bold;
 }
 
 .wrap{
