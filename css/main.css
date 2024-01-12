@@ -6,22 +6,31 @@
 /* 상단메뉴 부분 좌측상단에 고정하기위해 */
 *{
     list-style: none;
-    text-decoration: none;
+    text-decoration-line: none;
     border-collapse: collapse;
     margin: 0;
     padding: 0;
     font-family: 'Noto Sans KR', sans-serif;
 }
-/* 전체 컨테이너 영역(전체 넓이,양쪽여백 설정) */
-.wrap{
-    width: 1000px; 
-    margin: 0 auto; 
+body{   
+    background-color:rgb(255, 249, 237);
 }
-/* pc상태에서는 넓이 768px보다 크면 보이지 않게 설정해주는 요소 */
-.hd2,.sc2,.sc3{display: none;}
+.box{
+    width: 120%;
+    height: 36px;
+    background-color:bisque;
+}
+
+.wrap{
+    width: 1200px; 
+    margin: 0 auto; 
+    position: relative;    
+}
 
 /* 로고 (left(x축) 들여쓰기, top(y축) */
 h1{
+    font-family: 'NanumGarMaesGeur';
+    font-size: 38px;
     float: left;
     position: relative;
     left:2%; /*left:30px;*/
@@ -29,7 +38,7 @@ h1{
 }
 /* 회사로고이미지 옆에 상단메뉴 배치 */
 .nv1{
-    width: 80%; /*1000px=100%->60% 600px 정도 */
+    width: 92%; /*1000px=100%->60% 600px 정도 */
     height: 40px; /*회사 로고 이미지와 같은 선을 맞추기 위해서*/
     float: left; /* left->left,,,,right*/
     position: relative; /*.nv2를 .nv1을 기준으로 오른쪽 배치 (relative)*/
@@ -42,10 +51,14 @@ h1{
     color: black;
 }
 
-.nv1 .dv1 .ul1{
-    position: absolute;
-    top: 50px;
-    left: 50px;
+.nv1 > ul >li a{
+    font-size: 14px;
+    color: black;
+}
+
+.nv1 > ul{
+    padding: 15px;
+    line-height: 30px;
 }
 
 ul{
@@ -55,10 +68,8 @@ ul{
 .nv1 {
     display: flex;
     flex-direction: row; 
-}
-
-.nv1 a {
-    font-weight: bold;
+    z-index: 100;
+    font-size: 15px;
 }
 
 .nv1 ul {
@@ -67,11 +78,6 @@ ul{
     margin: 0 50px;
 }
 
-/* .nv1:hover ul {
-    display: flex;
-    flex-direction: column;
-}
- */
 .nv1 div {
     padding: 0 10px;
 }
@@ -92,28 +98,40 @@ ul{
 
 /* nv2(로그인) */
 .nv2{
-    width: 14%;
-    height: 50px;
-    border: 1px solid black;
+    align-items: center;
+    width: 25%;
+    height: 40px;
     position: relative;
     float: right;
-    top: 30px;
-    right: 3%;
 }
+
+.search{
+    border-image-width: 1%;
+    width: 20px;
+    height: 20px;
+}
+
+.shopping{
+    border-image-width: 1;
+    width: 20px;
+    height: 20px;
+}
+
 
 .nv2 ul>li {
     float: left;
-    font-size: 11px;
+    font-size: 15px;
     margin-left: 10%;
-    margin-top: 20px;
 }
 
 .nv2 ul li a{ /*login,mypage 글자자체*/
     display: inline-block;
     padding: 2px;
+    color: black;
+
 }
 
-.nv2 ul li a:hover{
+.nv1 > ul > li a:hover{
     background-color: mediumpurple;
     color: white;
 }
@@ -122,12 +140,13 @@ ul{
 
 /*  이미지 슬라이드쇼 */
 .cycle-slideshow{
-    position: relative; /*header를 기준으로해서 아래에 배치(ex 왼->오, 윗->아래쪽에 배치)*/
-    z-index: 1; /*메뉴 z-index:5*/
-    top: 100px; /*70px nv2가 겹치기 때문에*/
+    position: relative; 
+    z-index: 1; 
+    top: 110px; 
 }
 .cycle-slideshow img{
-    height: 350px; /*원래 이미지 400px*/
+    width: 1200px;
+    height: 870px; 
 }
 
 

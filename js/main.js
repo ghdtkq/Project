@@ -6,6 +6,7 @@ $(function(){
       $(".ul1").css("left","-48px");
       $(".ul1").css("top","40px");
       $(".ul1").css("text-align","center");
+      $(".ul1").css("background-color","rgb(255, 250, 245)");
     },function(){
       $(".ul1").css("display","block");
       $(".ul1").css("display","none");
@@ -19,6 +20,7 @@ $(function(){
       $(".ul2").css("left","10px");
       $(".ul2").css("top","40px");
       $(".ul2").css("text-align","center");
+      $(".ul2").css("background-color","rgb(255, 250, 245)");
     },function(){
       $(".ul2").css("display","block");
       $(".ul2").css("display","none");
@@ -32,6 +34,7 @@ $(function(){
       $(".ul3").css("left","81px");
       $(".ul3").css("top","40px");
       $(".ul3").css("text-align","center");
+      $(".ul3").css("background-color","rgb(255, 250, 245)");
     },function(){
       $(".ul3").css("display","block");
       $(".ul3").css("display","none");
@@ -45,6 +48,7 @@ $(function(){
       $(".ul4").css("left","142px");
       $(".ul4").css("top","40px");
       $(".ul4").css("text-align","center");
+      $(".ul4").css("background-color","rgb(255, 250, 245)");
     },function(){
       $(".ul4").css("display","block");
       $(".ul4").css("display","none");
@@ -58,6 +62,7 @@ $(function(){
       $(".ul5").css("left","215px");
       $(".ul5").css("top","40px");
       $(".ul5").css("text-align","center");
+      $(".ul5").css("background-color","rgb(255, 250, 245)");
     },function(){
       $(".ul5").css("display","block");
       $(".ul5").css("display","none");
@@ -71,6 +76,7 @@ $(function(){
       $(".ul6").css("left","277px");
       $(".ul6").css("top","40px");
       $(".ul6").css("text-align","center");
+      $(".ul6").css("background-color","rgb(255, 250, 245)");
     },function(){
       $(".ul6").css("display","block");
       $(".ul6").css("display","none");
@@ -84,6 +90,7 @@ $(function(){
       $(".ul7").css("left","358px");
       $(".ul7").css("top","40px");
       $(".ul7").css("text-align","center");
+      $(".ul7").css("background-color","rgb(255, 250, 245)");
     },function(){
       $(".ul7").css("display","block");
       $(".ul7").css("display","none");
@@ -97,6 +104,7 @@ $(function(){
       $(".ul8").css("left","443px");
       $(".ul8").css("top","40px");
       $(".ul8").css("text-align","center");
+      $(".ul8").css("background-color","rgb(255, 250, 245)");
     },function(){
       $(".ul8").css("display","block");
       $(".ul8").css("display","none");
@@ -110,6 +118,7 @@ $(function(){
       $(".ul9").css("left","524px");
       $(".ul9").css("top","40px");
       $(".ul9").css("text-align","center");
+      $(".ul9").css("background-color","rgb(255, 250, 245)");
     },function(){
       $(".ul9").css("display","block");
       $(".ul9").css("display","none");
@@ -122,7 +131,8 @@ $(function(){
       $(".ul10").css("display","block");
       $(".ul10").css("left","593px");
       $(".ul10").css("top","40px");
-      $(".ul10").css("text-align","center");    
+      $(".ul10").css("text-align","center");
+      $(".ul10").css("background-color","rgb(255, 250, 245)");
     },function(){
       $(".ul10").css("display","block");
       $(".ul10").css("display","none");
@@ -131,5 +141,104 @@ $(function(){
 
 
 
+  $(function(){
+    $(".ul1").hover(function(){
+      $(".ul1").css("display","none");
+      $(".ul1").css("display","block");
+    },function(){
+      $(".ul1").css("display","block");
+      $(".ul1").css("display","none");
+    });
+  });
+  
+  $(function(){
+    $(".ul2").hover(function(){
+      $(".ul2").css("display","none");
+      $(".ul2").css("display","block");
+    },function(){
+      $(".ul2").css("display","block");
+      $(".ul2").css("display","none");
+    });
+  });
+  
+  $(function(){
+    $(".ul3").hover(function(){
+      $(".ul3").css("display","none");
+      $(".ul3").css("display","block");
+    },function(){
+      $(".ul3").css("display","block");
+      $(".ul3").css("display","none");
+    });
+  });
+  
+  $(function(){
+    $(".ul4").hover(function(){
+      $(".ul4").css("display","none");
+      $(".ul4").css("display","block");
+    },function(){
+      $(".ul4").css("display","block");
+      $(".ul4").css("display","none");
+    });
+  });
+  
+  $(function(){
+    $(".ul5").hover(function(){
+      $(".ul5").css("display","none");
+      $(".ul5").css("display","block");
+    },function(){
+      $(".ul5").css("display","block");
+      $(".ul5").css("display","none");
+    });
+  });
+
+  $(function(){
+    $(".ul6").hover(function(){
+      $(".ul6").css("display","none");
+      $(".ul6").css("display","block");
+    },function(){
+      $(".ul6").css("display","block");
+      $(".ul6").css("display","none");
+    });
+  });
+  
+  $(function(){
+    $(".ul7").hover(function(){
+      $(".ul7").css("display","none");
+      $(".ul7").css("display","block");
+    },function(){
+      $(".ul7").css("display","block");
+      $(".ul7").css("display","none");
+    });
+  });
+
+  $(function(){
+    $(".ul8").hover(function(){
+      $(".ul8").css("display","none");
+      $(".ul8").css("display","block");
+    },function(){
+      $(".ul8").css("display","block");
+      $(".ul8").css("display","none");
+    });
+  });
+  
+  $(function(){
+    $(".ul9").hover(function(){
+      $(".ul9").css("display","none");
+      $(".ul9").css("display","block");
+    },function(){
+      $(".ul9").css("display","block");
+      $(".ul9").css("display","none");
+    });
+  });
+  
+  $(function(){
+    $(".ul10").hover(function(){
+      $(".ul10").css("display","none");
+      $(".ul10").css("display","block");
+    },function(){
+      $(".ul10").css("display","block");
+      $(".ul10").css("display","none");
+    });
+  });
   
 
