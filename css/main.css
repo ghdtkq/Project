@@ -14,8 +14,8 @@
 }
 /* 전체 컨테이너 영역(전체 넓이,양쪽여백 설정) */
 .wrap{
-    width: 1000px; /*width:70%=>양쪽 여백은 15%+15%=30%*/
-    margin: 0 auto; /*좌우 여백 자동 조절*/
+    width: 1000px; 
+    margin: 0 auto; 
 }
 /* pc상태에서는 넓이 768px보다 크면 보이지 않게 설정해주는 요소 */
 .hd2,.sc2,.sc3{display: none;}
@@ -30,33 +30,28 @@ h1{
 /* 회사로고이미지 옆에 상단메뉴 배치 */
 .nv1{
     width: 80%; /*1000px=100%->60% 600px 정도 */
-    height: 50px; /*회사 로고 이미지와 같은 선을 맞추기 위해서*/
+    height: 40px; /*회사 로고 이미지와 같은 선을 맞추기 위해서*/
     float: left; /* left->left,,,,right*/
-    border: 1px solid black; /*영역 확인용*/
     position: relative; /*.nv2를 .nv1을 기준으로 오른쪽 배치 (relative)*/
     left: 5%; /* 회사 이미지보다 옆에 배치 */
-    top: 30px;
+    top: 40px;
     z-index: 5; /*동영상, 슬라이드 이미지와 겹치는 경우 메뉴가 맨 앞에 배치(z-index) */
+}
+
+.nv1 > div a{
+    color: black;
+}
+
+.nv1 .dv1 .ul1{
+    position: absolute;
+    top: 50px;
+    left: 50px;
 }
 
 ul{
     list-style-type: none; /* 메뉴의 마크 제거 list-style:none; */
 }
-/* 
-대상자:hover->마우스를 갖다댈때 (=>onmouseover, onmouseout=>소스코드로 작성)
-Shopping,Event,About us 색깔지정(배경색)
-태그명.클래스명:hover
-*/
 
-/* 1단계 메뉴의 위치 설정
-거리감 : 조금 움직이는 경우 -> %보다는 px로 설정
-        어느 정도 움직이는 경우(폭 큰경우)->%로 계산 width:80%,margin:0 auto 
-*/
-
-/* 
-서브메뉴를 안나오게 설정 1)absolute사용-top:-9999를 이용해서 위로 배치
-                        2)display:none;->block.inline,inline-block
-*/
 .nv1 {
     display: flex;
     flex-direction: row; 
@@ -72,17 +67,17 @@ Shopping,Event,About us 색깔지정(배경색)
     margin: 0 50px;
 }
 
-.nv1:hover ul {
+/* .nv1:hover ul {
     display: flex;
     flex-direction: column;
 }
-
-.nv1 ul li {
-    padding: 10px;
+ */
+.nv1 div {
+    padding: 0 10px;
 }
 
-.nv1 ul li:hover {
-    background-color: #f0f0f0; /* Change the background color on hover */
+.nv1 div:hover {
+    background-color:beige; 
 }
 
 
