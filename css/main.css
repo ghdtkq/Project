@@ -3,7 +3,7 @@
 작성날짜:2024.01.11 ~ 2024.01.18
 작성자:양홍섭
 */
-/* 상단메뉴 부분 좌측상단에 고정하기위해 */
+
 *{
     list-style: none;
     text-decoration-line: none;
@@ -108,46 +108,36 @@ ul{
 
 /* nv2(로그인) */
 .nv2{
-    align-items: center;
-    width: 25%;
-    height: 40px;
     position: relative;
-    float: right;
+    top: 40px;
+    left: -230px;
 }
-
-
-.search{
-    border-image-width: 1%;
-    width: 20px;
-    height: 20px;
+.nv2 ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
 }
-
-.shopping{
-    border-image-width: 1;
-    width: 20px;
-    height: 20px;
-}
-
-
-.nv2 ul>li {
+.nv2 li {
     float: left;
-    font-size: 15px;
-    margin-left: 10%;
+    margin: 0 10px; 
 }
-
-.nv2 ul li a{ /*login,mypage 글자자체*/
-    display: inline-block;
-    padding: 2px;
+.nv2 ul li a{
     color: black;
     font-family: 'NanumDongHwaDdoBag';
     font-size: 16px;
     font-weight: bold;
-
+    white-space: nowrap;
+} 
+.search{
+    width: 21px;
+    height: 21px;
 }
-
-.nv1 > ul > li a:hover{
-    background-color: mediumpurple;
-    color: white;
+.shopping{
+    width: 27px;
+    height: 27px;
+}
+.shopping, .search {
+    vertical-align: middle; 
 }
 
 
@@ -156,7 +146,7 @@ ul{
 .cycle-slideshow{
     position: relative; 
     z-index: 1;
-    top: 110px; 
+    top: 90px; 
 }
 .cycle-slideshow img{
     width: 1200px;
@@ -169,11 +159,10 @@ ul{
 
 /* 푸터 */
 .ft1{
-    clear: both; /*위의 설정한 배치속*/
     border: 1px solid black;
     position: relative;
     margin: 0 auto;
-    top: -200px;
+    top: 200px;
     height: 100px;
 }
 .nv3{
