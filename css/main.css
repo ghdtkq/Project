@@ -49,7 +49,7 @@ h1{
     position: relative; /*.nv2를 .nv1을 기준으로 오른쪽 배치 (relative)*/
     left: 5%; /* 회사 이미지보다 옆에 배치 */
     top: 40px;
-    z-index: 5; /*동영상, 슬라이드 이미지와 겹치는 경우 메뉴가 맨 앞에 배치(z-index) */
+    z-index: 100; /*동영상, 슬라이드 이미지와 겹치는 경우 메뉴가 맨 앞에 배치(z-index) */
 }
 
 .nv1 > div a{
@@ -111,6 +111,7 @@ ul{
     position: relative;
     top: 40px;
     left: -230px;
+    z-index: 100;
 }
 .nv2 ul {
     list-style: none;
@@ -128,6 +129,11 @@ ul{
     font-weight: bold;
     white-space: nowrap;
 } 
+
+.nv2 ul li a:hover {
+    transform: scale(2);
+    transition-duration: 1s;
+}
 .search{
     width: 21px;
     height: 21px;
