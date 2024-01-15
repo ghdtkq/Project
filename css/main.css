@@ -20,7 +20,7 @@ body{
     height: 34px;
     background-color:bisque;
     text-align: center;
-    font-family: 'NanumDongHwaDdoBag';
+    font-family: 'NanumDongHwaDdoBag';  
     padding-top: 10px;
     font-weight: bold;
 }
@@ -32,7 +32,7 @@ body{
 }
 
 /* 로고 (left(x축) 들여쓰기, top(y축) */
-h1{
+.h1{
     font-family: 'NanumGarMaesGeur';
     font-size: 38px;
     float: left;
@@ -86,6 +86,7 @@ ul{
     display: none;
     position: absolute;
     margin: 0 50px;
+    z-index: 1px;
 }
 
 .nv1 div {
@@ -93,7 +94,12 @@ ul{
 }
 
 .nv1 div:hover {
-    background-color:beige; 
+    background-color:beige;
+}
+
+.nv1 ul li a:hover{
+    transform: scale(2);
+    transition-duration: 0.5s;
 }
 
 
@@ -130,10 +136,6 @@ ul{
     white-space: nowrap;
 } 
 
-.nv2 ul li a:hover {
-    transform: scale(2);
-    transition-duration: 1s;
-}
 .search{
     width: 21px;
     height: 21px;
@@ -143,7 +145,12 @@ ul{
     height: 27px;
 }
 .shopping, .search {
+    transition: all 0.2s linear;
     vertical-align: middle; 
+}
+
+.shopping:hover, .search:hover{
+    transform: scale(1.4);
 }
 
 
@@ -169,19 +176,39 @@ ul{
     position: relative;
     margin: 0 auto;
     top: 200px;
-    height: 100px;
+    height: 300px;
+    width: 100%;
+    color: #434343;
 }
 .nv3{
     position: relative;
+    font-size: 14px;
     top: 20px;
 }
 .nv3 ul > li{
     float: left;
-    margin-left: 4.3%;
+    margin-left:6.5%;
 }
+
+.insta, .face{
+    width: 35px;
+    height: 35px;
+}
+.youtube{
+    width: 40px;
+    height: 45px;
+}
+.face,.youtube{
+    margin-left: 40px;
+}
+.insta,.face,.youtube{
+    vertical-align: middle; 
+}
+
 .nv4{
-    position: relative;
-    top: 40px;
+    position: absolute;
+    top: 200px;
+    font-size: 13px;
 }
 .nv4 ul{
     list-style: none;
@@ -189,7 +216,6 @@ ul{
 .nv4 ul>li{
     float: left;
     margin-left: 4%;
-    font-size: 11px;
 }
 
 
