@@ -10,15 +10,16 @@
     border-collapse: collapse;
     margin: 0;
     padding: 0;
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'NanumDongHwaDdoBag';
 }
 body{   
-    background-color:rgb(255, 249, 237);
+    background-color:rgb(253, 249, 241);
+    
 }
 .box{
     width: 100%;
     height: 34px;
-    background-color:bisque;
+    background-color:rgb(255, 230, 202);
     text-align: center;
     font-family: 'NanumDongHwaDdoBag';  
     padding-top: 10px;
@@ -167,29 +168,67 @@ ul{
 }
 
 
+/*옷*/
+
+
+.product {
+    width: 220px;
+    margin: 20px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.product-info {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.favorite-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    margin: 0 10px;
+}
+
+.favorite-button {
+    color: #e74c3c;
+}
 
 
 
-/* 푸터 */
+
+
+
+
+
+/* 푸터1 */
 .ft1{
-    border: 1px solid black;
     position: relative;
     margin: 0 auto;
     top: 200px;
     height: 300px;
     width: 100%;
-    color: #434343;
+    color: #939393;
 }
 .nv3{
     position: relative;
-    font-size: 14px;
+    font-size: 17px;
     top: 20px;
 }
 .nv3 ul > li{
     float: left;
     margin-left:6.5%;
 }
-
 .insta, .face{
     width: 35px;
     height: 35px;
@@ -199,25 +238,49 @@ ul{
     height: 45px;
 }
 .face,.youtube{
-    margin-left: 40px;
+    margin-left: 35px;
 }
 .insta,.face,.youtube{
     vertical-align: middle; 
 }
 
+/*푸터2*/
 .nv4{
+    border-top: 1px solid rgb(162, 162, 162);
     position: absolute;
     top: 200px;
     font-size: 13px;
+    width: 100%;
+    padding-bottom: 60px;
+}
+.nv4li > a{
+    color: black;
+    font-weight: bold;
+    margin-left: 30px;
+    font-size: 14px;
+    
 }
 .nv4 ul{
     list-style: none;
+    margin-top: 80px;
+    color: #939393;
 }
 .nv4 ul>li{
     float: left;
-    margin-left: 4%;
+    margin-left: 3%;
 }
-
-
-
+.nv4 > .nv4ul > li{
+    margin-bottom: 2px;
+}
+.nv4 > ul > li, .nv4 >ul >li >a{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.logo{
+    margin-left: 45px;
+    margin-top: -30px 
+}
+.logo >img{
+    width: 100px;
+    height: 160px;
+}
 
