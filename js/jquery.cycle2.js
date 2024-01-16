@@ -674,10 +674,10 @@ $.fn.cycle.defaults = {
     slideClass:       'cycle-slide',
     slideCss:         { position: 'absolute', top: 0, left: 0 },
     slides:          '> img',
-    speed:            500,
+    speed:            700,
     startingSlide:    0,
     sync:             true,
-    timeout:          4000,
+    timeout:          3500,
     updateView:       0
 };
 
