@@ -215,9 +215,13 @@ ul{
 
 /*중간 텍스트*/
 .midtext{
+    width: 400px;
+    height: 100px;
+    margin: 0 auto;
     text-align: center;
     font-size: 18px;
     color: #535353;
+    background-color:aquamarine;
 }
 
 
