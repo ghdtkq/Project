@@ -1,6 +1,19 @@
 //헤더
 $(function(){
-    $(".dv1").hover(function(){
+    $(".dv1, a1").hover(function(){
+      $(".ul1").css("display","none");
+      $(".ul1").css("display","block");
+      $(".ul1").css("left","-55px");
+      $(".ul1").css("top","40px");
+      $(".ul1").css("background-color","rgb(255, 250, 245)");
+    },function(){
+      $(".ul1").css("display","block");
+      $(".ul1").css("display","none");
+    });
+  });
+
+  $(function(){
+    $(".a1").hover(function(){
       $(".ul1").css("display","none");
       $(".ul1").css("display","block");
       $(".ul1").css("left","-55px");

@@ -95,7 +95,8 @@ body{
     top: 30px; /*맨 처음에 나오는 이미지의 위치 설정부분*/
     
 }
-/* 회사로고이미지 옆에 상단메뉴 배치 */
+
+
 .nv1{
     width: 90%; /*1000px=100%->60% 600px 정도 */
     height: 40px; /*회사 로고 이미지와 같은 선을 맞추기 위해서*/
@@ -105,6 +106,7 @@ body{
     top: 40px;
     z-index: 100; /*동영상, 슬라이드 이미지와 겹치는 경우 메뉴가 맨 앞에 배치(z-index) */
 }
+
 
 .nv1 > div a{
     font-family: 'NanumDongHwaDdoBag';
@@ -123,10 +125,6 @@ body{
 .nv1 > ul{
     padding: 15px 20px;
     line-height: 40px;
-}
-
-ul{
-    list-style-type: none; /* 메뉴의 마크 제거 list-style:none; */
 }
 
 .nv1 {
@@ -157,11 +155,8 @@ ul{
 }
 
 
-/* 여백 주기(메뉴, 테두리선) */
-.nv1 div a{ /* nv1에 있는 3개의 div에 들어있는 메뉴항목글자 */
+.nv1 div a{ 
     display: inline-block;
-    /*가로로 정렬하면서(inline),width,height를 줄경우
-    줄바꿈도 되어야 하는 경우에 사용하는 속성*/
     padding: 3px;
 }
 
