@@ -291,15 +291,13 @@ ul{
     position: absolute;
     font-size: 17px;
     top: 20px;
-    left: 200px;
 }
 .nv3 > ul{
     margin:0 auto ;
 }
 .nv3 ul > li{
     float: left;
-    margin: 20px;
-    margin: 0 auto;
+    margin: 0 110px;
 }
 .insta, .face{
     width: 35px;
@@ -332,13 +330,13 @@ ul{
     font-size: 14px;
     
 }
-.nv4 ul{
+.nv4ul{
     list-style: none;
     margin-top: 80px;
     color: #939393;
 }
 .nv4 ul>li{
-    float: left;
+    display: inline-block;
     margin-left: 3%;
 }
 .nv4 > .nv4ul > li{
@@ -348,10 +346,12 @@ ul{
     font-family: 'Noto Sans KR', sans-serif;
 }
 .logo{
+    display: inline-block;
     margin-left: 45px;
     margin-top: -30px 
 }
 .logo >img{
+    display: inline-block;
     width: 100px;
     height: 160px;
 }
