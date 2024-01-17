@@ -43,6 +43,10 @@ body{
   line-height: 60px;
 }
 
+.line > a{
+    color: white;
+}
+
 .line:first-child{
   animation: anim 18s infinite;
 }
