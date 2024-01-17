@@ -7,33 +7,36 @@
 *{
     list-style: none;
     text-decoration-line: none;
-    border-collapse: collapse;
     margin: 0;
     padding: 0;
     font-family: 'NanumDongHwaDdoBag';
 }
 body{   
-    position: relative; 
     background-color:rgb(253, 249, 241);
-    
 }
-.animated-text:not(.earth){
+.wrapp{
+    width: 1200px; 
+    margin: 0 auto; 
+    position: relative;    
+}
+.animated-text{
     position: absolute;
     transform: translate(-50%, -50%);
     overflow: hidden;
-    left: 740px;
-    width: 100%;
+    left:600px;
+    width: 158.6%;
     height: 50px;
     background-color:rgb(255, 210, 142);
     text-align: center;
     font-family: 'NanumDongHwaDdoBag';  
-    padding-top: 10px;
+    padding-top: 14px;
     font-weight: bold;
     color: #fff5eb;
 }
 .animated-text a{
     width: 20px;
     height: 20px;
+    text-align: center;
 }
 
 .line{
@@ -45,8 +48,8 @@ body{
 
 .line > a{
     color: white;
-}
 
+}
 .line:first-child{
   animation: anim 18s infinite;
 }
@@ -94,7 +97,7 @@ body{
 }
 /* 회사로고이미지 옆에 상단메뉴 배치 */
 .nv1{
-    width: 92%; /*1000px=100%->60% 600px 정도 */
+    width: 90%; /*1000px=100%->60% 600px 정도 */
     height: 40px; /*회사 로고 이미지와 같은 선을 맞추기 위해서*/
     float: left; /* left->left,,,,right*/
     position: relative; /*.nv2를 .nv1을 기준으로 오른쪽 배치 (relative)*/
@@ -167,7 +170,7 @@ ul{
 .nv2{
     position: relative;
     top: 40px;
-    left: -230px;
+    left: -210px;
     z-index: 100;
 }
 .nv2 ul {
@@ -285,13 +288,18 @@ ul{
     font-weight: bold;
 }
 .nv3{
-    position: relative;
+    position: absolute;
     font-size: 17px;
     top: 20px;
+    left: 200px;
+}
+.nv3 > ul{
+    margin:0 auto ;
 }
 .nv3 ul > li{
     float: left;
-    margin-left:6.5%;
+    margin: 20px;
+    margin: 0 auto;
 }
 .insta, .face{
     width: 35px;
