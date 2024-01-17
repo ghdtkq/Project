@@ -12,7 +12,7 @@
     font-family: 'NanumDongHwaDdoBag';
 }
 body{   
-    background-color:rgb(253, 249, 241);
+    background-color:rgb(255, 252, 252);
 }
 .wrapp{
     width: 1200px; 
@@ -26,7 +26,7 @@ body{
     left:600px;
     width: 158.6%;
     height: 50px;
-    background-color:rgb(255, 210, 142);
+    background-color:rgb(255, 211, 187);
     text-align: center;
     font-family: 'NanumDongHwaDdoBag';  
     padding-top: 14px;
@@ -93,7 +93,6 @@ body{
     position: relative;
     left:2%; /*left:30px;*/
     top: 30px; /*맨 처음에 나오는 이미지의 위치 설정부분*/
-    
 }
 
 
@@ -104,15 +103,16 @@ body{
     position: relative; /*.nv2를 .nv1을 기준으로 오른쪽 배치 (relative)*/
     left: 5%; /* 회사 이미지보다 옆에 배치 */
     top: 40px;
-    z-index: 100; /*동영상, 슬라이드 이미지와 겹치는 경우 메뉴가 맨 앞에 배치(z-index) */
+ /*동영상, 슬라이드 이미지와 겹치는 경우 메뉴가 맨 앞에 배치(z-index) */
 }
 
 
-.nv1 > div a{
+.nv1 > a{
     font-family: 'NanumDongHwaDdoBag';
     color: black;
     font-size: 19px;
     font-weight:bold;
+    margin-left: 20px;
 }
 
 .nv1 > ul >li a{
@@ -130,7 +130,7 @@ body{
 .nv1 {
     display: flex;
     flex-direction: row; 
-    z-index: 100;
+    z-index: 20;
     font-size: 15px;
 }
 
@@ -138,15 +138,16 @@ body{
     display: none;
     position: absolute;
     margin: 0 50px;
-    z-index: 1px;
 }
 
-.nv1 div {
+.nv1 a {
     padding: 0 10px;
+    z-index: 1000;
+    cursor: pointer;
 }
 
-.nv1 div:hover {
-    background-color:beige;
+.nv1 a:hover {
+    background-color:rgb(255, 250, 245);
 }
 
 .nv1 ul li a:hover{
@@ -155,9 +156,13 @@ body{
 }
 
 
-.nv1 div a{ 
+.nv1 a{ 
     display: inline-block;
     padding: 3px;
+}
+
+.a1{
+    z-index: 200;
 }
 
 
@@ -215,6 +220,7 @@ body{
     height: 840px; 
 }
 
+
 /*중간 텍스트*/
 .midtext{
     width: 400px;
@@ -249,27 +255,48 @@ body{
 
 .product-info {
     margin-top: 15px;
-    text-align: center;
     cursor: pointer;
 }
+.product-info > .del{
+    margin-left: 7px;
+    font-size: 13px;
+    color: #939393;
+    text-decoration: line-through;
+}
 
-.favorite-button {
+.favorite-button, .cart-button {
     background: none;
     border: none;
     cursor: pointer;
-    font-size: 24px;
+    font-size: 26px;
     margin: 0 10px;
+    float: right;
+    z-index: 1000;
+}
+
+.cart-button{
+    font-size: 20px;
 }
 
 .favorite-button {
     color: #e74c3c;
 }
 
+.cart-button {
+    color: #3498db;
+}
 
+.additional-image {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
 
-
-
-
+.additional-image {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
 
 
 /* 푸터1 */

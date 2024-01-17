@@ -11,6 +11,18 @@
         <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
         <script src="./js/main.js"></script>
         <script src="./js/jquery.cycle2.js"></script>
+        <script>
+            function toggleFavorite(button) {
+                button.classList.toggle('favorite-filled');
+            }
+            
+            function shakeCart(button) {
+                button.classList.add('shake-animation');
+                setTimeout(() => {
+                    button.classList.remove('shake-animation');
+                }, 500);
+            }
+        </script>
     </head>
     <body>
         <div class="wrapp">
@@ -32,7 +44,7 @@
                 <h1 class="h1">예다움</h1>
                 <nav class="nv1">
                     <!-- 서브메뉴 -->
-                    <div class="dv1"><a href="#" class="a1">Best</a></div>
+                    <a href="#" class="a1">Best</a>
                         <ul class="ul1">
                             <li><a href="#">원피스</a></li>
                             <li><a href="#">블라우스</a></li>
@@ -43,7 +55,7 @@
                             <li><a href="#">팬츠</a></li>
                             <li><a href="#">악세사리</a></li>
                         </ul>
-                    <div class="dv2"><a href="#">New</a></div>
+                    <a href="#" class="a2">New</a>
                     <ul class="ul2">
                         <li><a href="#">원피스</a></li>
                         <li><a href="#">블라우스</a></li>
@@ -55,7 +67,7 @@
                         <li><a href="#">악세사리</a></li>
                     </ul>
 
-                    <div class="dv3"><a href="#">아우터</a></div>
+                    <a href="#" class="a3">아우터</a>
                     <ul class="ul3">
                         <li><a href="#">트위드</a></li>
                         <li><a href="#">패딩</a></li>
@@ -65,7 +77,7 @@
                         <li><a href="#">점퍼</a></li>
                     </ul>
 
-                    <div class="dv4"><a href="#">원피스</a></div>
+                    <a href="#" class="a4">원피스</a>
                     <ul class="ul4">
                         <li><a href="#">미니</a></li>
                         <li><a href="#">롱</a></li>
@@ -79,7 +91,7 @@
                         <li><a href="#">플레어</a></li>
                     </ul>
 
-                    <div class="dv5"><a href="#">니트</a></div>
+                    <a href="#" class="a5">니트</a>
                     <ul class="ul5">
                         <li><a href="#">자체제작</a></li>
                         <li><a href="#">단독진행</a></li>
@@ -89,7 +101,7 @@
                         <li><a href="#">가디건</a></li>
                     </ul>
 
-                    <div class="dv6"><a href="#">티셔츠</a></div>
+                    <a href="#" class="a6">티셔츠</a>
                     <ul class="ul6">
                         <li><a href="#">자체제작</a></li>
                         <li><a href="#">단독진행</a></li>
@@ -98,7 +110,7 @@
                         <li><a href="#">민소매</a></li>
                     </ul>
 
-                    <div class="dv7"><a href="#" >블라우스/셔츠</a></div>
+                    <a href="#" class="a7">블라우스/셔츠</a>
                     <ul class="ul7">
                         <li><a href="#">무지</a></li>
                         <li><a href="#">셔츠</a></li>
@@ -109,7 +121,7 @@
                         <li><a href="#">레이스</a></li>
                     </ul>
 
-                    <div class="dv8"><a href="#">스커트</a></div>
+                    <a href="#" class="a8">스커트</a>
                     <ul class="ul8">
                         <li><a href="#">3기장</a></li>
                         <li><a href="#">H라인</a></li>
@@ -127,7 +139,7 @@
                         <li><a href="#">머메이드</a></li>
                     </ul>
 
-                    <div class="dv9"><a href="#" >팬츠</a></div>
+                    <a href="#" class="a9">팬츠</a>
                     <ul class="ul9">
                         <li><a href="#">데님</a></li>
                         <li><a href="#">7~9부</a></li>
@@ -142,7 +154,7 @@
                         <li><a href="#">니트</a></li>
                     </ul>
 
-                    <div class="dv10"><a href="#" >악세사리</a></div>
+                    <a href="#" class="a10">악세사리</a>
                     <ul class="ul10">
                         <li><a href="#">슈즈</a></li>
                         <li><a href="#">가방</a></li>
@@ -187,11 +199,12 @@
                     <img src="./img/1.2.png" >
                     <img src="./img/1.3.png">
                     <img src="./img/1.4.png">
-                    <div class="product-info">
-                        <h4>스탠다드 소프트라운드니트 (5color)</h4>
-                        <p>30,000원</p>
-                        <button class="favorite-button">&#9825;</button>
-                    </div>
+                </div>
+                <div class="product-info">
+                    <h4>스탠다드 소프트라운드니트 (5color)</h4> <br>
+                    <b style="color: rgb(0, 62, 218);">10%</b> <b style="margin-left: 7px;">27,000원</b> <b class="del">30,000원</b> <br>
+                    <button class="cart-button" onclick="shakeCart(this)">&#128722;</button>
+                    <button class="favorite-button" onclick="toggleFavorite(this)">&#9825;</button>
                 </div>
             </div>
             <div class="product">
@@ -199,23 +212,25 @@
                     <img src="./img/2.1.png" >
                     <img src="./img/2.2.png">
                     <img src="./img/2.3.png" >
+                </div>
                     <div class="product-info">
                         <h4>네이 시스루레이스폴라티</h4>
                         <p>14,000원</p>
-                        <button class="favorite-button">&#9825;</button>
+                        <button class="cart-button" onclick="shakeCart(this)">&#128722;</button>
+                    <button class="favorite-button" onclick="toggleFavorite(this)">&#9825;</button>
                     </div>
-                </div>
             </div>
             <div class="product">
                 <div class="cycle-slideshow" style="top: 0px;">
                     <img src="./img/3.1.png">
                     <img src="./img/3.2.png">
                     <img src="./img/3.3.png" >
-                    <div class="product-info">
-                        <h4>비엔 플라워레이어드원피스</h4>
-                        <p>14,000원</p>
-                        <button class="favorite-button">&#9825;</button>
-                    </div>
+                </div>
+                <div class="product-info">
+                    <h4>비엔 플라워레이어드원피스</h4>
+                    <p>14,000원</p>
+                    <button class="cart-button" onclick="shakeCart(this)">&#128722;</button>
+                    <button class="favorite-button" onclick="toggleFavorite(this)">&#9825;</button>
                 </div>
             </div>
             <div class="product">
@@ -223,13 +238,21 @@
                     <img src="./img/4.1.png" >
                     <img src="./img/4.2.png" >
                     <img src="./img/4.3.png" >
-                    <div class="product-info">
-                        <h4>브리티시 글렌체크울자켓 (2color)</h4>
-                        <p>14,000원</p>
-                        <button class="favorite-button">&#9825;</button>
-                    </div>
+                </div>
+                <div class="product-info">
+                    <h4>브리티시 글렌체크울자켓 (2color)</h4>
+                    <p>14,000원</p>
+                    <button class="cart-button" onclick="shakeCart(this)">&#128722;</button>
+                    <button class="favorite-button" onclick="toggleFavorite(this)">&#9825;</button>
                 </div>
             </div>
+
+
+
+
+
+
+
             <div class="product">
                 <div class="cycle-slideshow" style="top: 0px;">
                     <img src="./img/1.1.png" >
