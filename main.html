@@ -11,18 +11,6 @@
         <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
         <script src="./js/main.js"></script>
         <script src="./js/jquery.cycle2.js"></script>
-        <script>
-            function toggleFavorite(button) {
-                button.classList.toggle('favorite-filled');
-            }
-            
-            function shakeCart(button) {
-                button.classList.add('shake-animation');
-                setTimeout(() => {
-                    button.classList.remove('shake-animation');
-                }, 500);
-            }
-        </script>
     </head>
     <body>
         <div class="wrapp">
@@ -185,12 +173,13 @@
             </div>
             <br><br><br><br><br><br><br><br><br>
 
-            <div class="midtext">
-                <p style="color:black; font-size:22px;">예다움은</p> <br>
-                <p>예쁨과 정다움을 지니라는 순우리말입니다. </p>
-                <p>그 뜻 그대로 여러분들에게 예다움을 선물해드리겠습니다. </p>
-            </div>
-            <br><br><br><br><br><br><br>
+                <div class="midtext"><br>
+                    <p style=" color:black; font-size:24px;">예다움은</p> <br>
+                    <p>예쁨과 정다움을 지니라는 순우리말입니다. </p>
+                    <p>그 뜻 그대로 여러분들에게 예다움을 선물해드리겠습니다. </p>
+                </div>
+            <br><br><br><br><br>
+
 
             <h2 style="margin-left:25px; margin-bottom:25px;">NEW ARRIVALS</h2>
             <div class="product">
@@ -203,8 +192,8 @@
                 <div class="product-info">
                     <h4>스탠다드 소프트라운드니트 (5color)</h4> <br>
                     <b style="color: rgb(0, 62, 218);">10%</b> <b style="margin-left: 7px;">27,000원</b> <b class="del">30,000원</b> <br>
-                    <button class="cart-button" onclick="shakeCart(this)">&#128722;</button>
-                    <button class="favorite-button" onclick="toggleFavorite(this)">&#9825;</button>
+                    <button class="cart-button" onclick="shakeCart(this)">🛒</button>
+                    <button class="favorite-button" style="margin-top: -3px;" onclick="toggleFavorite(this)">&#9825;</button>
                 </div>
             </div>
             <div class="product">
@@ -214,12 +203,12 @@
                     <img src="./img/2.3.png" >
                 </div>
                     <div class="product-info">
-                        <h4>네이 시스루레이스폴라티</h4>
-                        <p>14,000원</p>
-                        <button class="cart-button" onclick="shakeCart(this)">&#128722;</button>
-                    <button class="favorite-button" onclick="toggleFavorite(this)">&#9825;</button>
+                        <h4>네이 시스루레이스폴라티</h4> <br>
+                        <b style="color: rgb(0, 62, 218);">5%</b> <b style="margin-left: 7px;">13,300원</b> <b class="del">14,000원</b> <br>
+                        <button class="cart-button" onclick="shakeCart(this)">🛒</button>
+                        <button class="favorite-button" style="margin-top: -3px;" onclick="toggleFavorite(this)">&#9825;</button>
                     </div>
-            </div>
+                </div>
             <div class="product">
                 <div class="cycle-slideshow" style="top: 0px;">
                     <img src="./img/3.1.png">
@@ -227,10 +216,10 @@
                     <img src="./img/3.3.png" >
                 </div>
                 <div class="product-info">
-                    <h4>비엔 플라워레이어드원피스</h4>
-                    <p>14,000원</p>
-                    <button class="cart-button" onclick="shakeCart(this)">&#128722;</button>
-                    <button class="favorite-button" onclick="toggleFavorite(this)">&#9825;</button>
+                    <h4>비엔 플라워레이어드원피스</h4> <br>
+                    <b style="color: rgb(0, 62, 218);">5%</b> <b style="margin-left: 7px;">18,100원</b> <b class="del">19,000원</b> <br>
+                    <button class="cart-button" onclick="shakeCart(this)">🛒</button>
+                    <button class="favorite-button" style="margin-top: -3px;" onclick="toggleFavorite(this)">&#9825;</button>
                 </div>
             </div>
             <div class="product">
@@ -240,30 +229,25 @@
                     <img src="./img/4.3.png" >
                 </div>
                 <div class="product-info">
-                    <h4>브리티시 글렌체크울자켓 (2color)</h4>
-                    <p>14,000원</p>
-                    <button class="cart-button" onclick="shakeCart(this)">&#128722;</button>
-                    <button class="favorite-button" onclick="toggleFavorite(this)">&#9825;</button>
+                    <h4>브리티시 글렌체크울자켓 (2color)</h4> <br>
+                    <b style="color: rgb(0, 62, 218);">5%</b> <b style="margin-left: 7px;">89,300원</b> <b class="del">94,000원</b> <br>
+                    <button class="cart-button" onclick="shakeCart(this)">🛒</button>
+                    <button class="favorite-button" style="margin-top: -3px;" onclick="toggleFavorite(this)">&#9825;</button>
                 </div>
             </div>
-
-
-
-
-
-
-
+            <br><br><br>
             <div class="product">
                 <div class="cycle-slideshow" style="top: 0px;">
                     <img src="./img/1.1.png" >
                     <img src="./img/1.2.png" >
                     <img src="./img/1.3.png">
                     <img src="./img/1.4.png">
-                    <div class="product-info">
-                        <h4>스탠다드 소프트라운드니트 (5color)</h4>
-                        <p>30,000원</p>
-                        <button class="favorite-button">&#9825;</button>
-                    </div>
+                </div>
+                <div class="product-info">
+                    <h4>스탠다드 소프트라운드니트 (5color)</h4> <br>
+                    <b style="color: rgb(0, 62, 218);">10%</b> <b style="margin-left: 7px;">27,000원</b> <b class="del">30,000원</b> <br>
+                    <button class="cart-button" onclick="shakeCart(this)">🛒</button>
+                    <button class="favorite-button" style="margin-top: -3px;" onclick="toggleFavorite(this)">&#9825;</button>
                 </div>
             </div>
             <div class="product">
@@ -271,23 +255,25 @@
                     <img src="./img/2.1.png" >
                     <img src="./img/2.2.png">
                     <img src="./img/2.3.png" >
+                </div>
                     <div class="product-info">
-                        <h4>네이 시스루레이스폴라티</h4>
-                        <p>14,000원</p>
-                        <button class="favorite-button">&#9825;</button>
+                        <h4>네이 시스루레이스폴라티</h4> <br>
+                        <b style="color: rgb(0, 62, 218);">5%</b> <b style="margin-left: 7px;">13,300원</b> <b class="del">14,000원</b> <br>
+                        <button class="cart-button" onclick="shakeCart(this)">🛒</button>
+                        <button class="favorite-button" style="margin-top: -3px;" onclick="toggleFavorite(this)">&#9825;</button>
                     </div>
                 </div>
-            </div>
             <div class="product">
                 <div class="cycle-slideshow" style="top: 0px;">
                     <img src="./img/3.1.png">
                     <img src="./img/3.2.png">
                     <img src="./img/3.3.png" >
-                    <div class="product-info">
-                        <h4>비엔 플라워레이어드원피스</h4>
-                        <p>14,000원</p>
-                        <button class="favorite-button">&#9825;</button>
-                    </div>
+                </div>
+                <div class="product-info">
+                    <h4>비엔 플라워레이어드원피스</h4> <br>
+                    <b style="color: rgb(0, 62, 218);">5%</b> <b style="margin-left: 7px;">18,100원</b> <b class="del">19,000원</b> <br>
+                    <button class="cart-button" onclick="shakeCart(this)">🛒</button>
+                    <button class="favorite-button" style="margin-top: -3px;" onclick="toggleFavorite(this)">&#9825;</button>
                 </div>
             </div>
             <div class="product">
@@ -295,27 +281,31 @@
                     <img src="./img/4.1.png" >
                     <img src="./img/4.2.png" >
                     <img src="./img/4.3.png" >
-                    <div class="product-info">
-                        <h4>브리티시 글렌체크울자켓 (2color)</h4>
-                        <p>14,000원</p>
-                        <button class="favorite-button">&#9825;</button>
-                    </div>
+                </div>
+                <div class="product-info">
+                    <h4>브리티시 글렌체크울자켓 (2color)</h4> <br>
+                    <b style="color: rgb(0, 62, 218);">5%</b> <b style="margin-left: 7px;">89,300원</b> <b class="del">94,000원</b> <br>
+                    <button class="cart-button" onclick="shakeCart(this)">🛒</button>
+                    <button class="favorite-button" style="margin-top: -3px;" onclick="toggleFavorite(this)">&#9825;</button>
                 </div>
             </div>
+            <br><br><br><br><br><br><br><br><br><br><br><br>
 
-            
-            <h2 style="margin-left:25px; margin-bottom:25px; margin-top:250px;">BEST ITEM</h2>
+
+
+            <h2 style="margin-left:25px; margin-bottom:25px;">BEST ITEM</h2>
             <div class="product">
                 <div class="cycle-slideshow" style="top: 0px;">
                     <img src="./img/1.1.png" >
                     <img src="./img/1.2.png" >
                     <img src="./img/1.3.png">
                     <img src="./img/1.4.png">
-                    <div class="product-info">
-                        <h4>스탠다드 소프트라운드니트 (5color)</h4>
-                        <p>30,000원</p>
-                        <button class="favorite-button">&#9825;</button>
-                    </div>
+                </div>
+                <div class="product-info">
+                    <h4>스탠다드 소프트라운드니트 (5color)</h4> <br>
+                    <b style="color: rgb(0, 62, 218);">10%</b> <b style="margin-left: 7px;">27,000원</b> <b class="del">30,000원</b> <br>
+                    <button class="cart-button" onclick="shakeCart(this)">🛒</button>
+                    <button class="favorite-button" style="margin-top: -3px;" onclick="toggleFavorite(this)">&#9825;</button>
                 </div>
             </div>
             <div class="product">
@@ -323,23 +313,25 @@
                     <img src="./img/2.1.png" >
                     <img src="./img/2.2.png">
                     <img src="./img/2.3.png" >
+                </div>
                     <div class="product-info">
-                        <h4>네이 시스루레이스폴라티</h4>
-                        <p>14,000원</p>
-                        <button class="favorite-button">&#9825;</button>
+                        <h4>네이 시스루레이스폴라티</h4> <br>
+                        <b style="color: rgb(0, 62, 218);">5%</b> <b style="margin-left: 7px;">13,300원</b> <b class="del">14,000원</b> <br>
+                        <button class="cart-button" onclick="shakeCart(this)">🛒</button>
+                        <button class="favorite-button" style="margin-top: -3px;" onclick="toggleFavorite(this)">&#9825;</button>
                     </div>
                 </div>
-            </div>
             <div class="product">
                 <div class="cycle-slideshow" style="top: 0px;">
                     <img src="./img/3.1.png">
                     <img src="./img/3.2.png">
                     <img src="./img/3.3.png" >
-                    <div class="product-info">
-                        <h4>비엔 플라워레이어드원피스</h4>
-                        <p>14,000원</p>
-                        <button class="favorite-button">&#9825;</button>
-                    </div>
+                </div>
+                <div class="product-info">
+                    <h4>비엔 플라워레이어드원피스</h4> <br>
+                    <b style="color: rgb(0, 62, 218);">5%</b> <b style="margin-left: 7px;">18,100원</b> <b class="del">19,000원</b> <br>
+                    <button class="cart-button" onclick="shakeCart(this)">🛒</button>
+                    <button class="favorite-button" style="margin-top: -3px;" onclick="toggleFavorite(this)">&#9825;</button>
                 </div>
             </div>
             <div class="product">
@@ -347,12 +339,70 @@
                     <img src="./img/4.1.png" >
                     <img src="./img/4.2.png" >
                     <img src="./img/4.3.png" >
+                </div>
+                <div class="product-info">
+                    <h4>브리티시 글렌체크울자켓 (2color)</h4> <br>
+                    <b style="color: rgb(0, 62, 218);">5%</b> <b style="margin-left: 7px;">89,300원</b> <b class="del">94,000원</b> <br>
+                    <button class="cart-button" onclick="shakeCart(this)">🛒</button>
+                    <button class="favorite-button" style="margin-top: -3px;" onclick="toggleFavorite(this)">&#9825;</button>
+                </div>
+            </div>
+            <br><br><br>
+            <div class="product">
+                <div class="cycle-slideshow" style="top: 0px;">
+                    <img src="./img/1.1.png" >
+                    <img src="./img/1.2.png" >
+                    <img src="./img/1.3.png">
+                    <img src="./img/1.4.png">
+                </div>
+                <div class="product-info">
+                    <h4>스탠다드 소프트라운드니트 (5color)</h4> <br>
+                    <b style="color: rgb(0, 62, 218);">10%</b> <b style="margin-left: 7px;">27,000원</b> <b class="del">30,000원</b> <br>
+                    <button class="cart-button" onclick="shakeCart(this)">🛒</button>
+                    <button class="favorite-button" style="margin-top: -3px;" onclick="toggleFavorite(this)">&#9825;</button>
+                </div>
+            </div>
+            <div class="product">
+                <div class="cycle-slideshow" style="top: 0px;">
+                    <img src="./img/2.1.png" >
+                    <img src="./img/2.2.png">
+                    <img src="./img/2.3.png" >
+                </div>
                     <div class="product-info">
-                        <h4>브리티시 글렌체크울자켓 (2color)</h4>
-                        <p>14,000원</p>
-                        <button class="favorite-button">&#9825;</button>
+                        <h4>네이 시스루레이스폴라티</h4> <br>
+                        <b style="color: rgb(0, 62, 218);">5%</b> <b style="margin-left: 7px;">13,300원</b> <b class="del">14,000원</b> <br>
+                        <button class="cart-button" onclick="shakeCart(this)">🛒</button>
+                        <button class="favorite-button" style="margin-top: -3px;" onclick="toggleFavorite(this)">&#9825;</button>
                     </div>
                 </div>
+            <div class="product">
+                <div class="cycle-slideshow" style="top: 0px;">
+                    <img src="./img/3.1.png">
+                    <img src="./img/3.2.png">
+                    <img src="./img/3.3.png" >
+                </div>
+                <div class="product-info">
+                    <h4>비엔 플라워레이어드원피스</h4> <br>
+                    <b style="color: rgb(0, 62, 218);">5%</b> <b style="margin-left: 7px;">18,100원</b> <b class="del">19,000원</b> <br>
+                    <button class="cart-button" onclick="shakeCart(this)">🛒</button>
+                    <button class="favorite-button" style="margin-top: -3px;" onclick="toggleFavorite(this)">&#9825;</button>
+                </div>
+            </div>
+            <div class="product">
+                <div class="cycle-slideshow" style="top: 0px;">
+                    <img src="./img/4.1.png" >
+                    <img src="./img/4.2.png" >
+                    <img src="./img/4.3.png" >
+                </div>
+                <div class="product-info">
+                    <h4>브리티시 글렌체크울자켓 (2color)</h4> <br>
+                    <b style="color: rgb(0, 62, 218);">5%</b> <b style="margin-left: 7px;">89,300원</b> <b class="del">94,000원</b> <br>
+                    <button class="cart-button" onclick="shakeCart(this)">🛒</button>
+                    <button class="favorite-button" style="margin-top: -3px;" onclick="toggleFavorite(this)">&#9825;</button>
+                </div>
+            </div>
+
+
             </div>
 
         </div>
@@ -360,8 +410,8 @@
             <nav class="nv3">
                 <ul>
                     <li> 
-                        <h4 style="color:black;">CUSTOMER CENTER</h4>  
-                        <h2 style="margin-top: 10px; margin-bottom:5px; color:black; font-size:25px;">1599-8329</h2>
+                        <h4 style="color:black;">CUSTOMER CENTER</h4>   
+                        <h2 style="margin-top: 12px; margin-bottom:5px; color:black; font-size:25px;">1599-8329</h2>
                         운영시간 10:00-17:00 점심시간 13:00-14:00<br>
                         토/일/공휴일(임시공휴일 포함) 휴무<br>
                     </li>
@@ -369,7 +419,7 @@
                     <li>
                         <h4 style="color:black;">BANK INFO</h4>  <br>
                         <p style=" margin-bottom:7px; color: rgb(0, 0, 0); font-size:18px;">입급계좌 </p> 
-                        기업은행 975-052889-01-012&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        기업은행 975-052889-01-012&nbsp;&nbsp;
                         농협은행 352-1383-4037-33 <br>
                         <p style="margin-top:3px;">예금주 예다움(주)</p> 
                     </li>

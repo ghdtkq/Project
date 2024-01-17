@@ -22,11 +22,11 @@ body{
 .animated-text{
     position: absolute;
     transform: translate(-50%, -50%);
-    overflow: hidden;
+    overflow: hidden;   
     left:600px;
     width: 158.6%;
     height: 50px;
-    background-color:rgb(255, 211, 187);
+    background-color:rgb(255, 218, 198);
     text-align: center;
     font-family: 'NanumDongHwaDdoBag';  
     padding-top: 14px;
@@ -147,7 +147,7 @@ body{
 }
 
 .nv1 a:hover {
-    background-color:rgb(255, 250, 245);
+    background-color:rgb(255, 252, 252);
 }
 
 .nv1 ul li a:hover{
@@ -222,14 +222,18 @@ body{
 
 
 /*중간 텍스트*/
+
+
 .midtext{
+    z-index: 100;
     width: 400px;
-    height: 100px;
+    height: 150px;
     margin: 0 auto;
     text-align: center;
     font-size: 18px;
-    color: #535353;
-    background-color:aquamarine;
+    color:#838383;
+    background-color: rgb(255, 249, 238);
+    border-radius: 80px;
 }
 
 
@@ -257,6 +261,7 @@ body{
     margin-top: 15px;
     cursor: pointer;
 }
+
 .product-info > .del{
     margin-left: 7px;
     font-size: 13px;
@@ -269,17 +274,22 @@ body{
     border: none;
     cursor: pointer;
     font-size: 26px;
-    margin: 0 10px;
+    margin: 0 6px;
     float: right;
-    z-index: 1000;
+    vertical-align: middle; 
+    transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
 }
-
 .cart-button{
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .favorite-button {
-    color: #e74c3c;
+    color: #ccc; /* Initial color for unfilled heart */
+}
+
+.favorite-filled {
+    color: #e74c3c; /* Color for filled heart */
+    transform: scale(1.2); /* Scale effect for filled heart */
 }
 
 .cart-button {
@@ -292,12 +302,27 @@ body{
     margin-top: 10px;
 }
 
-.additional-image {
-    max-width: 100%;
-    height: auto;
-    margin-top: 10px;
+.shake-animation {
+    animation: shake 1s;
 }
 
+@keyframes shake {
+    10%, 90% {
+        transform: translateX(-5px);
+    }
+
+    20%, 80% {
+        transform: translateX(5px);
+    }
+
+    30%, 50%, 70% {
+        transform: translateX(-10px);
+    }
+
+    40%, 60% {
+        transform: translateX(10px);
+    }
+}
 
 /* 푸터1 */
 .ft1{
@@ -310,16 +335,21 @@ body{
     font-weight: bold;
 }
 .nv3{
-    position: absolute;
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
     font-size: 17px;
     top: 20px;
 }
 .nv3 > ul{
+    position: relative;
     margin:0 auto ;
 }
 .nv3 ul > li{
-    float: left;
-    margin: 0 110px;
+    display: inline-block;
+    margin: 0 60px;
+    text-align: left;
+    vertical-align:top;
 }
 .insta, .face{
     width: 35px;
@@ -330,7 +360,7 @@ body{
     height: 45px;
 }
 .face,.youtube{
-    margin-left: 35px;
+    margin-left: 30px;
 }
 .insta,.face,.youtube{
     vertical-align: middle; 
