@@ -151,8 +151,8 @@ body{
 }
 
 .nv1 ul li a:hover{
-    transform: scale(2);
-    transition-duration: 0.5s;
+    transform: scale(1.2);
+    transition-duration: 1s;
 }
 
 
@@ -222,8 +222,6 @@ body{
 
 
 /*중간 텍스트*/
-
-
 .midtext{
     z-index: 100;
     width: 400px;
@@ -238,8 +236,6 @@ body{
 
 
 /*옷*/
-
-
 .product {
     width: 220px;
     margin: 20px;
@@ -324,6 +320,25 @@ body{
     }
 }
 
+/*View More 박스*/
+.more{
+    margin: 0 auto;
+    text-align: center;
+}
+.view-more-button {
+    background-color: rgb(255, 252, 252);
+    margin: 0 auto;
+    text-align: center;
+    width: 160px;
+    height: 55px;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
 /* 푸터1 */
 .ft1{
     position: relative;
@@ -344,6 +359,7 @@ body{
 .nv3 > ul{
     position: relative;
     margin:0 auto ;
+    margin-bottom: -100px;
 }
 .nv3 ul > li{
     display: inline-block;
@@ -369,42 +385,48 @@ body{
 /*푸터2*/
 .nv4{
     border-top: 1px solid rgb(162, 162, 162);
-    position: absolute;
+    position: relative;
+    margin: 0 auto;
     top: 200px;
     font-size: 13px;
-    width: 100%;
     padding-bottom: 60px;
+    display: flex;
+    align-items: center;
+    margin-left: -500px;
+}
+.nv4ul{
+    margin:0 auto ;
+    margin-top: 80px;
+    color: #939393;
+    display: flex;
+    align-items: center;
+}
+.nv4ul > .nv4li{
+    margin-top: -20px;
+}
+.nv4ul > .nv4li > a{
+    margin-left: 3%;
+}
+.nv4ul >.nv4li > p{
+    font-family: 'Noto Sans KR', sans-serif;
+    line-height: 21px;
+}
+.nv4 ul > li{
+    margin-left: 50px;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 .nv4li > a{
     color: black;
     font-weight: bold;
-    margin-left: 30px;
     font-size: 14px;
-    
-}
-.nv4ul{
-    list-style: none;
-    margin-top: 80px;
-    color: #939393;
-}
-.nv4 ul>li{
-    display: inline-block;
-    margin-left: 3%;
-}
-.nv4 > .nv4ul > li{
-    margin-bottom: 2px;
-}
-.nv4 > ul > li, .nv4 >ul >li >a{
     font-family: 'Noto Sans KR', sans-serif;
 }
 .logo{
-    display: inline-block;
-    margin-left: 45px;
-    margin-top: -30px 
+    margin-top: -20px;
+    margin-left: 210px;
 }
-.logo >img{
-    display: inline-block;
-    width: 100px;
-    height: 160px;
+.logo > img{
+    width:80px;
+    height: 130px;
 }
 
